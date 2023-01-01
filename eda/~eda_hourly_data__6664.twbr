@@ -1,0 +1,1910 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.22.1108.1355                               -->
+<workbook source-build='2021.3.18 (20213.22.1108.1355)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='yellow_taxi_data_hourly' inline='true' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='yellow_taxi_data_hourly' name='textscan.1b4mone119p7my1awrx8s0nyy16s'>
+            <connection class='textscan' directory='F:/BFD Project Data/Processed' filename='yellow_taxi_data_hourly_v6.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1b4mone119p7my1awrx8s0nyy16s' name='yellow_taxi_data_hourly_v6.csv' table='[yellow_taxi_data_hourly_v6#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='pickup_datetime' ordinal='0' />
+            <column datatype='string' name='payment_type' ordinal='1' />
+            <column datatype='string' name='pickup_from' ordinal='2' />
+            <column datatype='string' name='dropoff_at' ordinal='3' />
+            <column datatype='integer' name='passenger_count' ordinal='4' />
+            <column datatype='real' name='trip_distance' ordinal='5' />
+            <column datatype='real' name='fare_amount' ordinal='6' />
+            <column datatype='real' name='tip_amount' ordinal='7' />
+            <column datatype='real' name='trip_duration' ordinal='8' />
+            <column datatype='real' name='total_amount' ordinal='9' />
+            <column datatype='integer' name='trips' ordinal='10' />
+            <column datatype='string' name='congestion_category' ordinal='11' />
+            <column datatype='string' name='day_category' ordinal='12' />
+            <column datatype='string' name='source_file' ordinal='13' />
+            <column datatype='integer' name='id' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1b4mone119p7my1awrx8s0nyy16s' name='yellow_taxi_data_hourly_v6.csv' table='[yellow_taxi_data_hourly_v6#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='pickup_datetime' ordinal='0' />
+            <column datatype='string' name='payment_type' ordinal='1' />
+            <column datatype='string' name='pickup_from' ordinal='2' />
+            <column datatype='string' name='dropoff_at' ordinal='3' />
+            <column datatype='integer' name='passenger_count' ordinal='4' />
+            <column datatype='real' name='trip_distance' ordinal='5' />
+            <column datatype='real' name='fare_amount' ordinal='6' />
+            <column datatype='real' name='tip_amount' ordinal='7' />
+            <column datatype='real' name='trip_duration' ordinal='8' />
+            <column datatype='real' name='total_amount' ordinal='9' />
+            <column datatype='integer' name='trips' ordinal='10' />
+            <column datatype='string' name='congestion_category' ordinal='11' />
+            <column datatype='string' name='day_category' ordinal='12' />
+            <column datatype='string' name='source_file' ordinal='13' />
+            <column datatype='integer' name='id' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[pickup_datetime]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>pickup_datetime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_type]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>payment_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pickup_from</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pickup_from]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>pickup_from</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dropoff_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dropoff_at]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>dropoff_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>passenger_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[passenger_count]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>passenger_count</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_distance]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>trip_distance</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fare_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fare_amount]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>fare_amount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tip_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tip_amount]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>tip_amount</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trip_duration]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>trip_duration</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_amount]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>total_amount</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trips]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>trips</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>congestion_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[congestion_category]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>congestion_category</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_category]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>day_category</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_file</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_file]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>source_file</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[yellow_taxi_data_hourly_v6.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Fare Amount Mean (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[fare_amount]' peg='0' size='5.2' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Passenger Count (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[passenger_count]' peg='0' size='0.998' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Passenger Count Mean (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[passenger_count]' peg='0' size='0.072' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Total Amount (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[total_amount]' peg='0' size='1.5' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Trip Duration (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[trip_duration]' peg='0' size='37' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='yellow_taxi_data_hourly_v6.csv' datatype='table' name='[__tableau_internal_object_id__].[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]' role='measure' type='quantitative' />
+      <column caption='Congestion Category' datatype='string' name='[congestion_category]' role='dimension' type='nominal' />
+      <column caption='Day Category' datatype='string' name='[day_category]' role='dimension' type='nominal' />
+      <column caption='Dropoff At' datatype='string' name='[dropoff_at]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Fare Amount' datatype='real' name='[fare_amount]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Passenger Count' datatype='integer' name='[passenger_count]' role='measure' type='quantitative' />
+      <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+      <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+      <column caption='Pickup From' datatype='string' name='[pickup_from]' role='dimension' type='nominal' />
+      <column caption='Source File' datatype='string' name='[source_file]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Tip Amount' datatype='real' name='[tip_amount]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+      <column caption='Trip Distance' datatype='real' name='[trip_distance]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+      <column-instance column='[fare_amount]' derivation='Avg' name='[avg:fare_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tip_amount]' derivation='Avg' name='[avg:tip_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[congestion_category]' derivation='None' name='[none:congestion_category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[dropoff_at]' derivation='None' name='[none:dropoff_at:nk]' pivot='key' type='nominal' />
+      <column-instance column='[payment_type]' derivation='None' name='[none:payment_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[pickup_from]' derivation='None' name='[none:pickup_from:nk]' pivot='key' type='nominal' />
+      <column-instance column='[pickup_datetime]' derivation='Year' name='[yr:pickup_datetime:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/TEMP_1gvhlzk05qc9041ewt4ac0jnw4f5.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/27/2022 12:00:47 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='yellow_taxi_data_hourly' increment-value='%null%' refresh-type='create' rows-inserted='1202264' timestamp-start='2022-12-27 00:00:41.029' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>pickup_datetime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[pickup_datetime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_datetime</remote-alias>
+              <ordinal>0</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>334256</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pickup_from</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pickup_from]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pickup_from</remote-alias>
+              <ordinal>2</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dropoff_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dropoff_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dropoff_at</remote-alias>
+              <ordinal>3</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>passenger_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[passenger_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>passenger_count</remote-alias>
+              <ordinal>4</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_distance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_distance</remote-alias>
+              <ordinal>5</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194626</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fare_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[fare_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fare_amount</remote-alias>
+              <ordinal>6</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>141993</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tip_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tip_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tip_amount</remote-alias>
+              <ordinal>7</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>260910</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trip_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_duration</remote-alias>
+              <ordinal>8</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>255174</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_amount</remote-alias>
+              <ordinal>9</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>221154</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trips</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trips]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trips</remote-alias>
+              <ordinal>10</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19371</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>congestion_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[congestion_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>congestion_category</remote-alias>
+              <ordinal>11</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_category</remote-alias>
+              <ordinal>12</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source_file</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source_file]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source_file</remote-alias>
+              <ordinal>13</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>141</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>14</ordinal>
+              <family>yellow_taxi_data_hourly_v6.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1202264</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:fare_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:tip_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:pickup_datetime:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2021</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2022</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2014</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:payment_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Cash&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;No Charge&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dispute&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Credit Card&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:congestion_category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;After Midnight Congestion&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Leading to Noon Congestion&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Evening Congestion&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Early Morning Congestion&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Afternoon Congestion&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:pickup_from:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Airport&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:dropoff_at:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Airport&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='yellow_taxi_data_hourly_v6.csv' id='yellow_taxi_data_hourly_v6.csv_FFFED80955184253AF3CE01FCAC3261F'>
+            <properties context=''>
+              <relation connection='textscan.1b4mone119p7my1awrx8s0nyy16s' name='yellow_taxi_data_hourly_v6.csv' table='[yellow_taxi_data_hourly_v6#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='pickup_datetime' ordinal='0' />
+                  <column datatype='string' name='payment_type' ordinal='1' />
+                  <column datatype='string' name='pickup_from' ordinal='2' />
+                  <column datatype='string' name='dropoff_at' ordinal='3' />
+                  <column datatype='integer' name='passenger_count' ordinal='4' />
+                  <column datatype='real' name='trip_distance' ordinal='5' />
+                  <column datatype='real' name='fare_amount' ordinal='6' />
+                  <column datatype='real' name='tip_amount' ordinal='7' />
+                  <column datatype='real' name='trip_duration' ordinal='8' />
+                  <column datatype='real' name='total_amount' ordinal='9' />
+                  <column datatype='integer' name='trips' ordinal='10' />
+                  <column datatype='string' name='congestion_category' ordinal='11' />
+                  <column datatype='string' name='day_category' ordinal='12' />
+                  <column datatype='string' name='source_file' ordinal='13' />
+                  <column datatype='integer' name='id' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Amount of Trips per Credit Card vs. Cash per Year-Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[payment_type]' derivation='None' name='[none:payment_type:nk]' pivot='key' type='nominal' />
+            <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column-instance column='[trips]' derivation='Sum' name='[sum:trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Month-Trunc' name='[tmn:pickup_datetime:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[trips]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:payment_type:nk]' member='&quot;Cash&quot;' />
+              <groupfilter function='member' level='[none:payment_type:nk]' member='&quot;Credit Card&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[sum:trips:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[tmn:pickup_datetime:qk]</cols>
+      </table>
+      <simple-id uuid='{399D744A-E60F-403C-9D87-F3B7817FBA20}' />
+    </worksheet>
+    <worksheet name='Avg. Hourly Trips per Hour, Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[trips]' derivation='Avg' name='[avg:trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[trips]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trips:qk]' field-type='quantitative' scale='log' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trips:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{CF549868-B479-411A-931E-518C84B7E3F3}' />
+    </worksheet>
+    <worksheet name='Avg. Hourly Trips per Month, Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[trips]' derivation='Avg' name='[avg:trips:qk]' pivot='key' type='quantitative' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column-instance column='[pickup_datetime]' derivation='Month-Trunc' name='[tmn:pickup_datetime:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[trips]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trips:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[tmn:pickup_datetime:qk]</cols>
+      </table>
+      <simple-id uuid='{B5DCE675-07B5-4BC6-8DF2-D2F36F485082}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Hour &amp; Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{15904335-BD50-4EC3-A3A0-0E53B7120137}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Hour &amp; Year (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{CCD217A5-1447-4E54-9B8F-0764A916AC96}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Hour, Year &amp; Dropoff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Dropoff At' datatype='string' name='[dropoff_at]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column-instance column='[dropoff_at]' derivation='None' name='[none:dropoff_at:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:dropoff_at:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{73BB00FE-0B1D-4375-B465-D0B71AB44E5F}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Hour, Year &amp; Payment Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column-instance column='[payment_type]' derivation='None' name='[none:payment_type:nk]' pivot='key' type='nominal' />
+            <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:payment_type:nk]' member='&quot;Cash&quot;' />
+              <groupfilter function='member' level='[none:payment_type:nk]' member='&quot;Credit Card&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{D8E099DD-EF1B-4A9C-AAB7-AF721A4C50BA}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Hour, Year &amp; Pickup'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pickup_from]' derivation='None' name='[none:pickup_from:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column caption='Pickup From' datatype='string' name='[pickup_from]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:pickup_from:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{BAF8016A-C022-4DAB-B007-8D1C28B18A04}' />
+    </worksheet>
+    <worksheet name='Avg. Total Amount per Month Year &amp; Congestion Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Congestion Category' datatype='string' name='[congestion_category]' role='dimension' type='nominal' />
+            <column-instance column='[congestion_category]' derivation='None' name='[none:congestion_category:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column-instance column='[pickup_datetime]' derivation='Month-Trunc' name='[tmn:pickup_datetime:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:congestion_category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[tmn:pickup_datetime:qk]</cols>
+      </table>
+      <simple-id uuid='{F48074D7-86B9-4F79-8A9C-050A4738C783}' />
+    </worksheet>
+    <worksheet name='Avg. Total Duration per Month Year &amp; Congestion Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='Congestion Category' datatype='string' name='[congestion_category]' role='dimension' type='nominal' />
+            <column-instance column='[congestion_category]' derivation='None' name='[none:congestion_category:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column-instance column='[pickup_datetime]' derivation='Month-Trunc' name='[tmn:pickup_datetime:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:congestion_category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[tmn:pickup_datetime:qk]</cols>
+      </table>
+      <simple-id uuid='{DB0CE75C-9B6D-4A1F-85B7-02D720ADDD73}' />
+    </worksheet>
+    <worksheet name='Avg. Trip Duration per Hour &amp; Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{0AA821E2-2FC6-4095-9C6E-2586EC734071}' />
+    </worksheet>
+    <worksheet name='Avg. Trip Duration per Hour, Year &amp; Dropoff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='Dropoff At' datatype='string' name='[dropoff_at]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column-instance column='[dropoff_at]' derivation='None' name='[none:dropoff_at:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:dropoff_at:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{29BA3C4C-2B9D-46DC-B038-06AECF69C1B6}' />
+    </worksheet>
+    <worksheet name='Avg. Trip Duration per Hour, Year &amp; Pickup'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column caption='Pickup Hour Year' datatype='string' name='[Calculation_1825365267328761861]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT(STR([pickup_datetime]), &apos;-&apos;, 1) + &apos;, &apos; &#13;&#10;+ SPLIT(SPLIT(STR([pickup_datetime]), &apos; &apos;, 2), &apos;:&apos;, 1) + &apos; hrs&apos;' />
+            </column>
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1825365267328761861]' derivation='None' name='[none:Calculation_1825365267328761861:nk]' pivot='key' type='nominal' />
+            <column-instance column='[pickup_from]' derivation='None' name='[none:pickup_from:nk]' pivot='key' type='nominal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column caption='Pickup From' datatype='string' name='[pickup_from]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:pickup_from:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:Calculation_1825365267328761861:nk]</cols>
+      </table>
+      <simple-id uuid='{E5A14D57-CD61-42E8-A372-F12D07F97D33}' />
+    </worksheet>
+    <worksheet name='Seasonal Plot Hourly Trips per Month Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[trips]' derivation='Avg' name='[avg:trips:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Month' name='[mn:pickup_datetime:ok]' pivot='key' type='ordinal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[trips]' role='measure' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Year' name='[yr:pickup_datetime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[mn:pickup_datetime:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trips:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]</cols>
+      </table>
+      <simple-id uuid='{2F4CCE83-D5BE-40F6-9BB6-423B823C4F50}' />
+    </worksheet>
+    <worksheet name='Seasonal Plot Total Amount (Hourly)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Hour' name='[hr:pickup_datetime:ok]' pivot='key' type='ordinal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Year' name='[yr:pickup_datetime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2011</bucket>
+              <bucket>2012</bucket>
+              <bucket>2013</bucket>
+              <bucket>2014</bucket>
+              <bucket>2015</bucket>
+              <bucket>2016</bucket>
+              <bucket>2017</bucket>
+              <bucket>2018</bucket>
+              <bucket>2019</bucket>
+              <bucket>2020</bucket>
+              <bucket>2021</bucket>
+              <bucket>2022</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-transparency' value='201' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[hr:pickup_datetime:ok]</cols>
+      </table>
+      <simple-id uuid='{2428E949-F819-4560-A7BE-C022CD79B10D}' />
+    </worksheet>
+    <worksheet name='Seasonal Plot Total Amount (Monthly)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Month' name='[mn:pickup_datetime:ok]' pivot='key' type='ordinal' />
+            <column caption='Pickup Datetime' datatype='datetime' name='[pickup_datetime]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+            <column-instance column='[pickup_datetime]' derivation='Year' name='[yr:pickup_datetime:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2011</bucket>
+              <bucket>2012</bucket>
+              <bucket>2013</bucket>
+              <bucket>2014</bucket>
+              <bucket>2015</bucket>
+              <bucket>2016</bucket>
+              <bucket>2017</bucket>
+              <bucket>2018</bucket>
+              <bucket>2019</bucket>
+              <bucket>2020</bucket>
+              <bucket>2021</bucket>
+              <bucket>2022</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[mn:pickup_datetime:ok]</cols>
+      </table>
+      <simple-id uuid='{BF0D3791-3395-4D60-B9AA-28AF441E9B8E}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='yellow_taxi_data_hourly' name='federated.0xwpgbf15b03dk15xgahr0yiukpr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xwpgbf15b03dk15xgahr0yiukpr'>
+            <column-instance column='[total_amount]' derivation='Avg' name='[avg:total_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[trip_duration]' derivation='Avg' name='[avg:trip_duration:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Avg' caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+            <column aggregation='Avg' caption='Trip Duration' datatype='real' name='[trip_duration]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:id:ok]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:total_amount:qk]</rows>
+        <cols>[federated.0xwpgbf15b03dk15xgahr0yiukpr].[avg:trip_duration:qk]</cols>
+      </table>
+      <simple-id uuid='{2275BF67-35E1-4FE9-B5F3-F56C4AA1BB53}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='Avg. Total Amount per Month Year &amp; Congestion Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:congestion_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FA2C7721-DFD1-4B5F-B538-F1A0FD3D48D6}' />
+    </window>
+    <window class='worksheet' name='Avg. Total Duration per Month Year &amp; Congestion Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:congestion_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{02502F21-5218-45DF-8F2C-050A0499086D}' />
+    </window>
+    <window class='worksheet' name='Seasonal Plot Total Amount (Monthly)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{529A5EE6-E9D7-4C19-8BD1-B4DDFCBE7BA5}' />
+    </window>
+    <window class='worksheet' name='Seasonal Plot Total Amount (Hourly)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[yr:pickup_datetime:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{949E170D-32E8-4C91-953A-08D690D3B325}' />
+    </window>
+    <window class='worksheet' name='Avg. Total Amount per Hour &amp; Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{87116181-9254-4A12-BF8E-8FA84CD36314}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Avg. Total Amount per Hour &amp; Year (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{53AC2645-081F-4B30-A738-3ADCFA96DC6F}' />
+    </window>
+    <window class='worksheet' name='Avg. Total Amount per Hour, Year &amp; Pickup'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:pickup_from:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9C30EDC0-1DC2-4F19-8DF8-E19367CB2575}' />
+    </window>
+    <window class='worksheet' name='Avg. Total Amount per Hour, Year &amp; Dropoff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:dropoff_at:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C28AFB50-E6CA-41AF-BC5B-31469C52E94D}' />
+    </window>
+    <window class='worksheet' name='Avg. Total Amount per Hour, Year &amp; Payment Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{327A24D4-2EEE-4DBF-ACF8-783A34B485DA}' />
+    </window>
+    <window class='worksheet' name='Avg. Hourly Trips per Month, Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{33F039FD-17FC-4534-B4FA-669D2702BD22}' />
+    </window>
+    <window class='worksheet' name='Avg. Hourly Trips per Hour, Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{282E474E-4F5D-4CF6-BC7A-BE917BA6D592}' />
+    </window>
+    <window class='worksheet' name='Seasonal Plot Hourly Trips per Month Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[mn:pickup_datetime:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{98D4C2A6-A672-439E-9894-457227746ED3}' />
+    </window>
+    <window class='worksheet' name='Avg. Trip Duration per Hour &amp; Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2BF49584-16FD-479A-8725-A57B04ED3D04}' />
+    </window>
+    <window class='worksheet' name='Avg. Trip Duration per Hour, Year &amp; Pickup'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:pickup_from:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6F482AF7-9810-4563-A8CB-F1A3B7C09EBC}' />
+    </window>
+    <window class='worksheet' name='Avg. Trip Duration per Hour, Year &amp; Dropoff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:dropoff_at:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F81B4333-80FC-44E6-8304-BB217D727F91}' />
+    </window>
+    <window class='worksheet' name='Amount of Trips per Credit Card vs. Cash per Year-Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0xwpgbf15b03dk15xgahr0yiukpr].[none:payment_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BBA7D5AC-BF6C-4F35-B0B1-1FE3E9D9AF5C}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AE81E88-11FB-481E-A08D-7F0D11801455}' />
+    </window>
+  </windows>
+</workbook>
